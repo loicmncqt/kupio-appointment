@@ -1,0 +1,4 @@
+{
+  "angular-template-formatter.closeTagSameLine": true,
+  "angular-template-formatter.indentWidth": 2
+}

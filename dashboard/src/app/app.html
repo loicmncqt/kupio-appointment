@@ -1,0 +1,22 @@
+<div class="min-h-screen bg-gray-50">
+  <!-- Sidebar -->
+  <app-sidebar [businessName]="businessName()" [logoUrl]="logoUrl()" />
+
+  <!-- Main Content Area -->
+  <div class="ml-64">
+    <!-- Header -->
+    <app-header
+      [pageTitle]="pageTitle()"
+      [user]="user()"
+      [unreadNotifications]="unreadNotifications()"
+      (openNotifications)="onOpenNotifications()"
+    />
+
+    <!-- Page Content -->
+    <main class="p-8">
+      <div class="mx-auto max-w-7xl">
+        <router-outlet />
+      </div>
+    </main>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<header class="header">
+  <input
+    class="header-input"
+    type="text"
+    placeholder="Rechercher...">
+  <div class="flex items-center justify-center gap-2">
+    <!-- <button
+      type="button"
+      class="icon-btn notifications"
+      (click)="onOpenNotifications()"
+      aria-label="Notifications">
+      <span
+        class="badge"
+        *ngIf="unreadNotifications() > 0">
+        {{ unreadNotifications() > 9 ? '9+' : unreadNotifications() }}
+      </span>
+    </button> -->
+    <button
+      hlmBtn
+      variant="ghost"
+      (click)="onOpenNotifications()"
+      aria-label="Notifications">
+      <ng-icon hlm size="sm" name="lucideBell" />
+    </button>
+    <button hlmBtn variant="ghost" [hlmDropdownMenuTrigger]="menu">
+      <hlm-avatar>
+        <span class='text-white bg-destructive' hlmAvatarFallback>{{ getInitials(user()) }}</span>
+      </hlm-avatar>
+      <span>{{ user().name }}</span>
+      <ng-icon hlm size="sm" name="lucideChevronDown" />
+    </button>
+    <ng-template #menu>
+			<hlm-dropdown-menu class="w-48">
+				<hlm-dropdown-menu-group>
+					<button hlmDropdownMenuItem>
+						<span>Mon profil</span>
+					</button>
+					<button hlmDropdownMenuItem>
+						<span>Paramètres</span>
+					</button>
+          <hlm-dropdown-menu-separator />
+					<button hlmDropdownMenuItem>
+						<span class="text-red-500">Se déconnecter</span>
+					</button>
+				</hlm-dropdown-menu-group>
+			</hlm-dropdown-menu>
+		</ng-template>
+  </div>
+</header>
