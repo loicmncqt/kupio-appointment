@@ -11,8 +11,8 @@ import {
   lucideSettings,
 } from '@ng-icons/lucide';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { NavItem } from '../../core/types';
-import { AppRoute } from '../../core/routes';
+import { NavItem } from '../../../core/types';
+import { AppRoute } from '../../../core/routes';
 
 @Component({
   selector: 'app-sidebar',

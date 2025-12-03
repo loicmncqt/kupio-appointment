@@ -1,8 +1,5 @@
 <header class="header">
-  <input
-    class="header-input"
-    type="text"
-    placeholder="Rechercher...">
+  <input class="w-80" hlmInput placeholder="Rechercher..." />
   <div class="flex items-center justify-center gap-2">
     <!-- <button
       type="button"
@@ -24,7 +21,7 @@
     </button>
     <button hlmBtn variant="ghost" [hlmDropdownMenuTrigger]="menu">
       <hlm-avatar>
-        <span class='text-white bg-destructive' hlmAvatarFallback>{{ getInitials(user()) }}</span>
+        <span class='primary-avatar' hlmAvatarFallback>{{ getInitials(user()) }}</span>
       </hlm-avatar>
       <span>{{ user().name }}</span>
       <ng-icon hlm size="sm" name="lucideChevronDown" />

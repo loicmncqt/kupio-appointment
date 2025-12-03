@@ -1,0 +1,14 @@
+.nav-item {
+  color: var(--foreground);
+}
+
+.nav-item:not(.nav-item-active):hover {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+
+.nav-item-active {
+  background: var(--primary-accent);
+  color: var(--primary);
+  font-weight: 500;
+}

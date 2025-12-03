@@ -1,6 +1,6 @@
-<aside class="fixed left-0 top-0 h-screen w-64 bg-white border-r flex flex-col" style="border-color: var(--sidebar-border);">
+<aside class="fixed left-0 top-0 h-screen w-64 bg-white border-r flex flex-col" style="border-color: var(--border);">
   <!-- Logo & Business Name -->
-  <div class="p-6 border-b" style="border-color: var(--sidebar-border);">
+  <div class="p-6 border-b" style="border-color: var(--border);">
     <div class="flex items-center gap-3">
       @if (logoUrl()) {
         <img [src]="logoUrl()" [alt]="businessName()" class="w-10 h-10 rounded-lg object-cover" />
@@ -17,17 +17,6 @@
 
   <!-- Navigation Items -->
   <nav class="flex-1 overflow-y-auto py-4 px-3">
-    <!-- <ul class="space-y-1">
-      <li>
-        <a
-          routerLinkActive="nav-item-active"
-          [routerLinkActiveOptions]="{ exact: false }"
-          class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg transition-colors duration-150">
-          <ng-icon hlm size="sm" name="lucideLayoutDashboard" />
-          <span class="text-sm">dazdazddza</span>
-        </a>
-      </li>
-    </ul> -->
     <ul class="space-y-1">
       @for (item of navItems(); track item.route) {
         <li>

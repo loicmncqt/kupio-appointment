@@ -1,5 +1,5 @@
 import { Component, input, output } from '@angular/core';
-import { User } from '../../core/types';
+import { User } from '../../../core/types';
 import { CommonModule } from '@angular/common';
 import { HlmIcon } from '@spartan-ng/helm/icon';
 import { NgIcon, provideIcons } from '@ng-icons/core';
@@ -7,6 +7,7 @@ import { lucideBell, lucideChevronDown } from '@ng-icons/lucide';
 import { HlmDropdownMenuImports } from '@spartan-ng/helm/dropdown-menu';
 import { HlmButtonImports } from '@spartan-ng/helm/button';
 import { HlmAvatarImports } from '@spartan-ng/helm/avatar';
+import { HlmInputImports } from '@spartan-ng/helm/input';
 
 @Component({
   selector: 'app-header',
@@ -17,6 +18,7 @@ import { HlmAvatarImports } from '@spartan-ng/helm/avatar';
     HlmButtonImports,
     HlmDropdownMenuImports,
     HlmAvatarImports,
+    HlmInputImports,
   ],
   providers: [provideIcons({ lucideBell, lucideChevronDown })],
   templateUrl: './header.html',

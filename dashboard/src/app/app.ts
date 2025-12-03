@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Sidebar } from './components/sidebar/sidebar';
-import { Header } from './components/header/header';
+import { Sidebar } from './shared/components/sidebar/sidebar';
+import { Header } from './shared/components/header/header';
 import { BookingStatus, User } from './core/types';
 
 @Component({

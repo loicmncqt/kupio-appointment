@@ -14,20 +14,9 @@
   border-bottom: 1px solid var(--border);
 }
 
-.header-input {
-  min-width: 220px;
-  max-width: 320px;
-  padding: 7px 14px;
-  border-radius: 8px;
-  border: 1px solid var(--input);
-  font-size: 15px;
-  color: var(--foreground);
-  background: var(--muted);
-  outline: none;
-  transition: border-color 120ms;
-}
-.header-input:focus {
-  border-color: var(--ring);
+.primary-avatar {
+  background-color: var(--primary-accent);
+  color: var(--primary);
 }
 
 .notifications .badge {

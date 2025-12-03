@@ -9,31 +9,31 @@ export const routes: Routes = [
   },
   {
     path: AppRoute.Dashboard.slice(1),
-    loadComponent: () => import('./pages/dashboard/dashboard').then((m) => m.DashboardPage),
+    loadComponent: () => import('./features/dashboard/dashboard').then((m) => m.DashboardPage),
   },
   {
     path: AppRoute.Establishment.slice(1),
     loadComponent: () =>
-      import('./pages/establishment/establishment').then((m) => m.EstablishmentPage),
+      import('./features/establishment/establishment').then((m) => m.EstablishmentPage),
   },
   {
     path: AppRoute.Services.slice(1),
-    loadComponent: () => import('./pages/services/services').then((m) => m.ServicesPage),
+    loadComponent: () => import('./features/services/services').then((m) => m.ServicesPage),
   },
   {
     path: AppRoute.Clients.slice(1),
-    loadComponent: () => import('./pages/clients/clients').then((m) => m.ClientsPage),
+    loadComponent: () => import('./features/clients/clients').then((m) => m.ClientsPage),
   },
   {
     path: AppRoute.Campaigns.slice(1),
-    loadComponent: () => import('./pages/campaigns/campaigns').then((m) => m.CampaignsPage),
+    loadComponent: () => import('./features/campaigns/campaigns').then((m) => m.CampaignsPage),
   },
   {
     path: AppRoute.Statistics.slice(1),
-    loadComponent: () => import('./pages/statistics/statistics').then((m) => m.StatisticsPage),
+    loadComponent: () => import('./features/statistics/statistics').then((m) => m.StatisticsPage),
   },
   {
     path: AppRoute.Settings.slice(1),
-    loadComponent: () => import('./pages/settings/settings').then((m) => m.SettingsPage),
+    loadComponent: () => import('./features/settings/settings').then((m) => m.SettingsPage),
   },
 ];
