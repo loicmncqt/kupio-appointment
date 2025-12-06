@@ -1,5 +1,6 @@
 export enum AppRoute {
   Dashboard = '/dashboard',
+  Reservations = '/reservations',
   Establishment = '/establishment',
   Services = '/services',
   Clients = '/clients',

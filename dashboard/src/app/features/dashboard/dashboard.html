@@ -1,223 +1,176 @@
-<div class="space-y-6">
-  <!-- Header -->
-  <div>
-    <h1 class="text-3xl font-bold text-gray-900">Tableau de bord</h1>
-    <p class="text-gray-500 mt-1">Mercredi 3 décembre 2025</p>
-  </div>
+<content-wrapper>
+  <div class="space-y-6">
+    <!-- Header -->
+    <div>
+      <h1 class="text-3xl font-bold text-gray-900">Tableau de bord</h1>
+      <p class="text-gray-500 mt-1">Mercredi 3 décembre 2025</p>
+    </div>
 
-  <div class="flex gap-6">
-    <!-- Left Section (2/3) -->
-    <div class="flex-1" style="flex: 0 0 66.666%">
-      <div class="grid grid-cols-2 gap-4">
-        <!-- Rendez-vous du jour -->
-        <section hlmCard class="hover:shadow-md transition-shadow cursor-pointer">
-          <div hlmCardHeader class="pb-3">
-            <div class="flex items-start justify-between">
-              <div class="flex-1">
-                <p class="text-sm font-medium text-gray-600">Rendez-vous du jour</p>
-                <p class="text-3xl font-bold text-gray-900 mt-2">12</p>
-                <p class="text-sm text-gray-500 mt-1">+3 vs hier</p>
-              </div>
-              <div class="bg-blue-50 p-3 rounded-lg">
-                <ng-icon hlm size="sm" name="lucideCalendar" class="text-blue-600" />
+    <div class="flex gap-6">
+      <!-- Left Section (2/3) -->
+      <div class="flex-1" style="flex: 0 0 66.666%">
+        <div class="grid grid-cols-2 gap-4">
+          <!-- Rendez-vous du jour -->
+          <section hlmCard>
+            <div hlmCardHeader class="pb-3">
+              <div class="flex items-start justify-between">
+                <div class="flex-1">
+                  <p class="text-sm font-medium text-gray-600">Rendez-vous du jour</p>
+                  <p class="text-3xl font-bold text-gray-900 mt-2">12</p>
+                  <p class="text-sm text-gray-500 mt-1">+3 vs hier</p>
+                </div>
+                <div class="bg-blue-50 p-3 rounded-lg">
+                  <ng-icon hlm size="sm" name="lucideCalendar" class="text-blue-600" />
+                </div>
               </div>
             </div>
-          </div>
-          <div hlmCardContent class="pt-3 border-t">
-            <button class="text-sm text-blue-600 hover:text-blue-700 font-medium flex items-center gap-1">
-              Voir l'agenda
-              <ng-icon hlm size="xs" name="lucideChevronRight" />
-            </button>
-          </div>
-        </section>
+            <div hlmCardContent class="pt-3 border-t">
+              <button hlmBtn variant="link" size="sm">
+                Voir l'agenda
+                <ng-icon hlm size="xs" name="lucideChevronRight" />
+              </button>
+            </div>
+          </section>
 
-        <!-- Nouveaux clients -->
-        <section hlmCard class="hover:shadow-md transition-shadow cursor-pointer">
-          <div hlmCardHeader class="pb-3">
-            <div class="flex items-start justify-between">
-              <div class="flex-1">
-                <p class="text-sm font-medium text-gray-600">Nouveaux clients</p>
-                <p class="text-3xl font-bold text-gray-900 mt-2">8</p>
-                <p class="text-sm text-gray-500 mt-1">Cette semaine</p>
-              </div>
-              <div class="bg-green-50 p-3 rounded-lg">
-                <ng-icon hlm size="sm" name="lucideUsers" class="text-green-600" />
+          <!-- Nouveaux clients -->
+          <section hlmCard>
+            <div hlmCardHeader class="pb-3">
+              <div class="flex items-start justify-between">
+                <div class="flex-1">
+                  <p class="text-sm font-medium text-gray-600">Nouveaux clients</p>
+                  <p class="text-3xl font-bold text-gray-900 mt-2">8</p>
+                  <p class="text-sm text-gray-500 mt-1">Cette semaine</p>
+                </div>
+                <div class="bg-green-50 p-3 rounded-lg">
+                  <ng-icon hlm size="sm" name="lucideUsers" class="text-green-600" />
+                </div>
               </div>
             </div>
-          </div>
-          <div hlmCardContent class="pt-3 border-t">
-            <button class="text-sm text-blue-600 hover:text-blue-700 font-medium flex items-center gap-1">
-              Voir la base client
-              <ng-icon hlm size="xs" name="lucideChevronRight" />
-            </button>
-          </div>
-        </section>
+            <div hlmCardContent class="pt-3 border-t">
+              <button hlmBtn variant="link" size="sm">
+                Voir la base client
+                <ng-icon hlm size="xs" name="lucideChevronRight" />
+              </button>
+            </div>
+          </section>
 
-        <!-- Chiffre d'affaires -->
-        <section hlmCard class="hover:shadow-md transition-shadow cursor-pointer">
-          <div hlmCardHeader class="pb-3">
-            <div class="flex items-start justify-between">
-              <div class="flex-1">
-                <p class="text-sm font-medium text-gray-600">Chiffre d'affaires</p>
-                <p class="text-3xl font-bold text-gray-900 mt-2">2 450€</p>
-                <p class="text-sm text-gray-500 mt-1">Aujourd'hui</p>
-              </div>
-              <div class="bg-purple-50 p-3 rounded-lg">
-                <ng-icon hlm size="sm" name="lucideChartLine" class="text-purple-600" />
+          <!-- Prestations populaires -->
+          <section hlmCard>
+            <div hlmCardHeader class="pb-3">
+              <div class="flex items-start justify-between">
+                <div class="flex-1">
+                  <p class="text-sm font-medium text-gray-600">Prestations populaires</p>
+                  <p class="text-3xl font-bold text-gray-900 mt-2">Coupe Femme</p>
+                  <p class="text-sm text-gray-500 mt-1">45 réservations</p>
+                </div>
+                <div class="bg-yellow-50 p-3 rounded-lg">
+                  <ng-icon hlm size="sm" name="lucideScissors" class="text-yellow-600" />
+                </div>
               </div>
             </div>
-          </div>
-          <div hlmCardContent class="pt-3 border-t">
-            <button class="text-sm text-blue-600 hover:text-blue-700 font-medium flex items-center gap-1">
-              Voir les statistiques
-              <ng-icon hlm size="xs" name="lucideChevronRight" />
-            </button>
-          </div>
-        </section>
+            <div hlmCardContent class="pt-3 border-t">
+              <button hlmBtn variant="link" size="sm">
+                Gérer les prestations
+                <ng-icon hlm size="xs" name="lucideChevronRight" />
+              </button>
+            </div>
+          </section>
 
-        <!-- Taux de remplissage -->
-        <section hlmCard class="hover:shadow-md transition-shadow cursor-pointer">
-          <div hlmCardHeader class="pb-3">
-            <div class="flex items-start justify-between">
-              <div class="flex-1">
-                <p class="text-sm font-medium text-gray-600">Taux de remplissage</p>
-                <p class="text-3xl font-bold text-gray-900 mt-2">87%</p>
-                <p class="text-sm text-gray-500 mt-1">Moyenne semaine</p>
-              </div>
-              <div class="bg-orange-50 p-3 rounded-lg">
-                <ng-icon hlm size="sm" name="lucideChartLine" class="text-orange-600" />
+          <!-- Temps moyen d'attente -->
+          <section hlmCard>
+            <div hlmCardHeader class="pb-3">
+              <div class="flex items-start justify-between">
+                <div class="flex-1">
+                  <p class="text-sm font-medium text-gray-600">Temps moyen d'attente</p>
+                  <p class="text-3xl font-bold text-gray-900 mt-2">12 jours</p>
+                  <p class="text-sm text-gray-500 mt-1">Pour un RDV</p>
+                </div>
+                <div class="bg-red-50 p-3 rounded-lg">
+                  <ng-icon hlm size="sm" name="lucideCalendar" class="text-red-600" />
+                </div>
               </div>
             </div>
-          </div>
-          <div hlmCardContent class="pt-3 border-t">
-            <button class="text-sm text-blue-600 hover:text-blue-700 font-medium flex items-center gap-1">
-              Voir les stats
-              <ng-icon hlm size="xs" name="lucideChevronRight" />
-            </button>
-          </div>
-        </section>
+            <div hlmCardContent class="pt-3 border-t">
+              <button hlmBtn variant="link" size="sm">
+                Voir les détails
+                <ng-icon hlm size="xs" name="lucideChevronRight" />
+              </button>
+            </div>
+          </section>
+        </div>
 
-        <!-- Prestations populaires -->
-        <section hlmCard class="hover:shadow-md transition-shadow cursor-pointer">
-          <div hlmCardHeader class="pb-3">
-            <div class="flex items-start justify-between">
-              <div class="flex-1">
-                <p class="text-sm font-medium text-gray-600">Prestations populaires</p>
-                <p class="text-3xl font-bold text-gray-900 mt-2">Coupe Femme</p>
-                <p class="text-sm text-gray-500 mt-1">45 réservations</p>
-              </div>
-              <div class="bg-yellow-50 p-3 rounded-lg">
-                <ng-icon hlm size="sm" name="lucideScissors" class="text-yellow-600" />
-              </div>
+        <!-- Quick Actions -->
+        <section hlmCard class="mt-4">
+          <div hlmCardHeader>
+            <div class="flex items-center gap-2">
+              <ng-icon hlm size="sm" name="lucideSettings" class="text-gray-700" />
+              <h3 class="text-lg font-semibold text-gray-900">Actions rapides</h3>
             </div>
           </div>
-          <div hlmCardContent class="pt-3 border-t">
-            <button class="text-sm text-blue-600 hover:text-blue-700 font-medium flex items-center gap-1">
-              Gérer les prestations
-              <ng-icon hlm size="xs" name="lucideChevronRight" />
-            </button>
-          </div>
-        </section>
-
-        <!-- Temps moyen d'attente -->
-        <section hlmCard class="hover:shadow-md transition-shadow cursor-pointer">
-          <div hlmCardHeader class="pb-3">
-            <div class="flex items-start justify-between">
-              <div class="flex-1">
-                <p class="text-sm font-medium text-gray-600">Temps moyen d'attente</p>
-                <p class="text-3xl font-bold text-gray-900 mt-2">12 jours</p>
-                <p class="text-sm text-gray-500 mt-1">Pour un RDV</p>
-              </div>
-              <div class="bg-red-50 p-3 rounded-lg">
-                <ng-icon hlm size="sm" name="lucideCalendar" class="text-red-600" />
-              </div>
+          <div hlmCardContent>
+            <div class="grid grid-cols-3 gap-3">
+              <button
+                hlmBtn
+                variant="outline"
+                class="p-4 h-auto flex flex-col items-center justify-center gap-2 hover:border-primary hover:bg-primary/5 transition-all"
+              >
+                <ng-icon hlm size="lg" name="lucideCalendar" class="text-gray-700" />
+                <span class="text-sm font-medium text-gray-900">Nouveau RDV</span>
+              </button>
+              <button
+                hlmBtn
+                variant="outline"
+                class="p-4 h-auto flex flex-col items-center justify-center gap-2 hover:border-primary hover:bg-primary/5 transition-all"
+              >
+                <ng-icon hlm size="lg" name="lucideUsers" class="text-gray-700" />
+                <span class="text-sm font-medium text-gray-900">Ajouter client</span>
+              </button>
+              <button
+                hlmBtn
+                variant="outline"
+                class="p-4 h-auto flex flex-col items-center justify-center gap-2 hover:border-primary hover:bg-primary/5 transition-all"
+              >
+                <ng-icon hlm size="lg" name="lucideMegaphone" class="text-gray-700" />
+                <span class="text-sm font-medium text-gray-900">Campagne pub</span>
+              </button>
             </div>
-          </div>
-          <div hlmCardContent class="pt-3 border-t">
-            <button class="text-sm text-blue-600 hover:text-blue-700 font-medium flex items-center gap-1">
-              Voir les détails
-              <ng-icon hlm size="xs" name="lucideChevronRight" />
-            </button>
           </div>
         </section>
       </div>
 
-      <!-- Quick Actions -->
-      <section hlmCard class="mt-4">
-        <div hlmCardHeader>
-          <div class="flex items-center gap-2">
-            <ng-icon hlm size="sm" name="lucideSettings" class="text-gray-700" />
-            <h3 class="text-lg font-semibold text-gray-900">Actions rapides</h3>
+      <!-- Right Section (1/3) - Rendez-vous du jour -->
+      <div style="flex: 0 0 33.333%">
+        <section hlmCard class="h-full">
+          <div hlmCardHeader>
+            <h3 class="text-lg font-semibold text-gray-900">Rendez-vous du jour</h3>
           </div>
-        </div>
-        <div hlmCardContent>
-          <div class="grid grid-cols-3 gap-3">
-            <button
-              class="p-4 border-2 border-gray-200 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-all text-center"
-            >
-              <ng-icon hlm size="lg" name="lucideCalendar" class="mx-auto mb-2 text-gray-700" />
-              <span class="text-sm font-medium text-gray-900">Nouveau RDV</span>
-            </button>
-            <button
-              class="p-4 border-2 border-gray-200 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-all text-center"
-            >
-              <ng-icon hlm size="lg" name="lucideUsers" class="mx-auto mb-2 text-gray-700" />
-              <span class="text-sm font-medium text-gray-900">Ajouter client</span>
-            </button>
-            <button
-              class="p-4 border-2 border-gray-200 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-all text-center"
-            >
-              <ng-icon hlm size="lg" name="lucideMegaphone" class="mx-auto mb-2 text-gray-700" />
-              <span class="text-sm font-medium text-gray-900">Campagne pub</span>
-            </button>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- Right Section (1/3) - Rendez-vous à venir -->
-    <div style="flex: 0 0 33.333%">
-      <section hlmCard class="h-full">
-        <div hlmCardHeader class="pb-4">
-          <div class="flex items-center justify-between mb-4">
-            <h3 class="text-lg font-semibold text-gray-900">Rendez-vous à venir</h3>
-            <div class="flex items-center gap-2">
-              <button class="p-1 hover:bg-gray-100 rounded" disabled>
-                <ng-icon hlm size="sm" name="lucideChevronLeft" class="text-gray-400" />
-              </button>
-              <button class="p-1 hover:bg-gray-100 rounded" disabled>
-                <ng-icon hlm size="sm" name="lucideChevronRight" class="text-gray-400" />
-              </button>
-            </div>
-          </div>
-          <div class="bg-blue-50 border border-blue-200 rounded-lg px-4 py-2 text-center">
-            <span class="text-sm font-medium text-blue-900">Semaine en cours</span>
-          </div>
-        </div>
-        <div hlmCardContent class="pt-0">
-          <div class="space-y-3">
-            @for (appointment of appointments(); track appointment.id) {
-              <div
-                class="p-4 bg-gray-50 rounded-lg border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all cursor-pointer"
-              >
-                <div class="flex items-start justify-between mb-2">
-                  <span class="text-lg font-bold text-blue-600">{{ appointment.startTime }}</span>
-                  <span class="text-xs bg-white px-2 py-1 rounded border border-gray-200 text-gray-600">
-                    {{ appointment.duration }}
-                  </span>
+          <div hlmCardContent class="pt-0">
+            <div class="space-y-3">
+              @for (appointment of appointments(); track appointment.id) {
+                <div
+                  class="p-4 bg-gray-50 rounded-lg border border-gray-200 hover:border-primary/30 hover:bg-primary/5 transition-all cursor-pointer"
+                >
+                  <div class="flex items-start justify-between mb-2">
+                    <span class="text-lg font-bold text-primary">{{ appointment.startTime }}</span>
+                    <span class="text-xs bg-white px-2 py-1 rounded border border-gray-200 text-gray-600">
+                      {{ appointment.duration }}
+                    </span>
+                  </div>
+                  <p class="font-semibold text-gray-900 mb-1">{{ appointment.clientName }}</p>
+                  <p class="text-sm text-gray-600">{{ appointment.service }}</p>
                 </div>
-                <p class="font-semibold text-gray-900 mb-1">{{ appointment.clientName }}</p>
-                <p class="text-sm text-gray-600">{{ appointment.service }}</p>
-              </div>
-            }
+              }
+            </div>
+            <button
+              hlmBtn
+              variant="outline"
+              class="w-full mt-4 text-primary hover:bg-primary/5 hover:border-primary transition-colors"
+            >
+              Voir tous les rendez-vous
+            </button>
           </div>
-          <button
-            class="w-full mt-4 py-2 text-sm font-medium text-blue-600 hover:text-blue-700 border border-blue-200 rounded-lg hover:bg-blue-50 transition-colors"
-          >
-            Voir tous les rendez-vous
-          </button>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   </div>
-</div>
+</content-wrapper>

@@ -3,6 +3,7 @@ import { NgIcon, provideIcons } from '@ng-icons/core';
 import { HlmIcon } from '@spartan-ng/helm/icon';
 import {
   lucideLayoutDashboard,
+  lucideCalendarDays,
   lucideBuilding,
   lucideScissors,
   lucideUsers,
@@ -22,6 +23,7 @@ import { AppRoute } from '../../../core/routes';
   providers: [
     provideIcons({
       lucideLayoutDashboard,
+      lucideCalendarDays,
       lucideBuilding,
       lucideScissors,
       lucideUsers,
@@ -40,6 +42,11 @@ export class Sidebar {
       label: 'Tableau de bord',
       icon: 'lucideLayoutDashboard',
       route: AppRoute.Dashboard,
+    },
+    {
+      label: 'Réservations',
+      icon: 'lucideCalendarDays',
+      route: AppRoute.Reservations,
     },
     {
       label: 'Établissement',

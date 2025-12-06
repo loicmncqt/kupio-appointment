@@ -12,6 +12,11 @@ export const routes: Routes = [
     loadComponent: () => import('./features/dashboard/dashboard').then((m) => m.DashboardPage),
   },
   {
+    path: AppRoute.Reservations.slice(1),
+    loadComponent: () =>
+      import('./features/reservations/reservations.component').then((m) => m.ReservationsComponent),
+  },
+  {
     path: AppRoute.Establishment.slice(1),
     loadComponent: () =>
       import('./features/establishment/establishment').then((m) => m.EstablishmentPage),

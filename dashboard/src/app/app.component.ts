@@ -7,8 +7,8 @@ import { BookingStatus, User } from './core/types';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, Sidebar, Header],
-  templateUrl: './app.html',
-  styleUrl: './app.css',
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css',
 })
 export class App {
   // Mock data - à remplacer par des services réels

@@ -6,8 +6,8 @@
 @import '@angular/cdk/overlay-prebuilt.css';
 
 /* You can add global styles to this file, and also import other style files */
-
 @import '@spartan-ng/brain/hlm-tailwind-preset.css';
+@import '../node_modules/angular-calendar/css/angular-calendar.css';
 
 :root {
   color-scheme: light;

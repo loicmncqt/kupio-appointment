@@ -1,0 +1,75 @@
+<div class="space-y-6">
+  <div class="bg-white border-b border-gray-200 px-8 py-4">
+    <div class="flex items-center justify-between mx-auto">
+      <div class="flex items-center gap-4">
+        <div class="flex items-center gap-2">
+          <div class="text-center min-w-[200px]">
+            <p class="text-lg font-semibold text-gray-900 capitalize">
+              {{ monthYear }}
+            </p>
+            <p class="text-sm text-gray-600">
+              {{ dateRange }}
+            </p>
+          </div>
+          <button
+            hlmBtn
+            variant="ghost"
+            size="icon"
+            (click)="navigateWeek(-1)"
+            class="transition-colors">
+            <ng-icon name="lucideChevronLeft" hlm size="sm" />
+          </button>
+          <button
+            hlmBtn
+            variant="ghost"
+            size="icon"
+            (click)="navigateWeek(1)"
+            class="transition-colors">
+            <ng-icon name="lucideChevronRight" hlm size="sm" />
+          </button>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <button
+          hlmBtn
+          variant="outline"
+          (click)="createAppointment()"
+          class="flex items-center gap-2">
+          <ng-icon name="lucidePlus" hlm size="sm" />
+          Déclarer une absence
+        </button>
+        <button
+          hlmBtn
+          variant="default"
+          (click)="createAppointment()"
+          class="flex items-center gap-2">
+          <ng-icon name="lucidePlus" hlm size="sm" />
+          Nouveau RDV
+        </button>
+      </div>
+    </div>
+  </div>
+  <content-wrapper>
+    <div class="w-full">
+      <mwl-calendar-week-view
+          [viewDate]="viewDate"
+          [events]="events"
+          [locale]="'fr'"
+          [excludeDays]="excludeDays"
+          [dayStartHour]="dayStartHour"
+          [dayEndHour]="dayEndHour"
+          (eventClicked)="onEventClicked($event)" />
+    </div>
+  </content-wrapper>
+
+  <!-- Appointment Panel -->
+  <app-appointment-panel
+    [isOpen]="isPanelOpen"
+    [isNewAppointment]="isNewAppointment"
+    [appointment]="selectedAppointment"
+    (closePanel)="closePanel()"
+    (edit)="handleEdit($event)"
+    (validate)="handleValidate($event)"
+    (deleteAppointment)="handleDelete($event)">
+  </app-appointment-panel>
+</div>

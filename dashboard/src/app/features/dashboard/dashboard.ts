@@ -18,6 +18,7 @@ import {
   lucideSettings,
 } from '@ng-icons/lucide';
 import { AppRoute } from '../../core/routes';
+import { ContentWrapperComponent } from '../../shared/components/content-wrapper/content-wrapper.component';
 
 interface Appointment {
   id: string;
@@ -29,7 +30,14 @@ interface Appointment {
 
 @Component({
   selector: 'app-dashboard',
-  imports: [CommonModule, HlmCardImports, HlmButtonImports, HlmIcon, NgIcon],
+  imports: [
+    CommonModule,
+    ContentWrapperComponent,
+    HlmCardImports,
+    HlmButtonImports,
+    HlmIcon,
+    NgIcon,
+  ],
   providers: [
     provideIcons({
       lucideLayoutDashboard,
